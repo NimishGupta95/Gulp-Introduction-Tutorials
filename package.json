@@ -1,0 +1,30 @@
+{
+  "name": "gulp-introduction-tutorials",
+  "version": "1.0.0",
+  "description": "It is repository to understand, how gulp.js works",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NimishGupta95/Gulp-Introduction-Tutorials.git"
+  },
+  "author": "Nimish Gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NimishGupta95/Gulp-Introduction-Tutorials/issues"
+  },
+  "homepage": "https://github.com/NimishGupta95/Gulp-Introduction-Tutorials#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-changed": "^1.3.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.0.2",
+    "gulp-jshint": "^2.0.1",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-strip-debug": "^1.1.0",
+    "gulp-uglify": "^2.0.0",
+    "jshint": "^2.9.2"
+  }
+}
