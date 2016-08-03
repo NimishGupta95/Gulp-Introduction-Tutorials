@@ -82,7 +82,7 @@ bulid -
   var jshint = require('gulp-jshint');
 
   // JS hint task
-  
+
   gulp.task('jshint', function() {
 
      gulp.src('./src/scripts/*.js')
@@ -93,7 +93,34 @@ bulid -
 
 });
 
-This Plugin will check the performance of your javascript file, and will log the errors on console.
+This Plugin will check the performance of your javascript file, and will log the errors in any javascript file on console.
 
 
+# Install More Plug-ins
+
+npm install gulp-changed --save-dev
+
+npm install gulp-imagemin --save-dev
+
+# Open Your Gulp File And Paste The Follwing Code
+
+gulp.task('imagemin', function() {
+
+  var imgSrc = './src/images/**/*',
+
+      imgDst = './build/images';
+
+  gulp.src(imgSrc)
+
+    .pipe(changed(imgDst))
+
+    .pipe(imagemin())
+
+    .pipe(gulp.dest(imgDst));
+
+});
+
+This task will first change the src of image to the destination folder and will compress the image.
+
+ 
 
