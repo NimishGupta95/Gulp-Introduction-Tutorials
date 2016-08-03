@@ -5,7 +5,9 @@ var gulp = require('gulp'),
     minifyHtml = require('gulp-minify-html'),
     concat = require('gulp-concat'),
     stripDebug = require('gulp-strip-debug'),
-    uglify = require('gulp-uglify');
+    uglify = require('gulp-uglify'),
+    autoprefix = require('gulp-autoprefixer'),
+    minifyCSS = require('gulp-minify-css');
 
 gulp.task('jshint', function() {
 	gulp.src('./src/scripts/*.js')
@@ -39,4 +41,12 @@ gulp.task('scripts', function() {
 	    .pipe(stripDebug())
 	    .pipe(uglify())
 	    .pipe(gulp.dest('./build/scripts/'));
+});
+
+gulp.task('styles', function() {
+  gulp.src(['./src/styles/*.css'])
+    .pipe(concat('styles.css'))
+    .pipe(autoprefix('last 2 versions'))
+    .pipe(minifyCSS())
+    .pipe(gulp.dest('./build/styles/'));
 });
