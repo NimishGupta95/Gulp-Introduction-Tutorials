@@ -118,6 +118,16 @@ gulp.task('imagemin', function() {
 
 This task will first change the src of image to the destination folder and will compress the image.
 
+
+# Automated Tasks
+
+gulp.task('default', ['imagemin', 'jshint'], function() {
+});
+
+Fot this you have to run only "gulp" from the command line.
+
+For more information about gulp, there is one interesting article https://www.sitepoint.com/introduction-gulp-js/
+
 There are several more plugins look the officail website of gulp for more plugins.
 http://gulpjs.com/plugins/
 
