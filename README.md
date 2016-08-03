@@ -77,11 +77,7 @@ bulid -
 
   var gulp = require('gulp'); 
 
-  // include plug-ins
-
   var jshint = require('gulp-jshint');
-
-  // JS hint task
 
   gulp.task('jshint', function() {
 
@@ -122,5 +118,9 @@ gulp.task('imagemin', function() {
 
 This task will first change the src of image to the destination folder and will compress the image.
 
- 
+There are several more plugins look the officail website of gulp for more plugins.
+http://gulpjs.com/plugins/
+
+
+
 
