@@ -44,11 +44,18 @@ Grunt and Gulp both do the same things for us. Basically Grunt is a Node.js Base
 cd Gulp-Introduction-Tutorials
 
 src -
+
    images
+   
    scripts
+   
    styles
+   
 bulid -
+
    images
+   
    scripts
+   
    styles
 
