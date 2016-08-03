@@ -78,9 +78,11 @@ bulid -
   var gulp = require('gulp'); 
 
   // include plug-ins
+
   var jshint = require('gulp-jshint');
 
   // JS hint task
+  
   gulp.task('jshint', function() {
 
      gulp.src('./src/scripts/*.js')
@@ -88,7 +90,7 @@ bulid -
          .pipe(jshint())
 
          .pipe(jshint.reporter('default'));
-         
+
 });
 
 This Plugin will check the performance of your javascript file, and will log the errors on console.
