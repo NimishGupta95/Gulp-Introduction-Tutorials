@@ -37,3 +37,18 @@ Grunt and Gulp both do the same things for us. Basically Grunt is a Node.js Base
 
 2) Grunt uses Json like data configuration files, while Gulp uses lenear Javascript
 
+
+
+# Setup Your Project
+
+cd Gulp-Introduction-Tutorials
+
+src -
+   images
+   scripts
+   styles
+bulid -
+   images
+   scripts
+   styles
+
