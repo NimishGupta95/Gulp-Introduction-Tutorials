@@ -45,17 +45,49 @@ cd Gulp-Introduction-Tutorials
 
 src -
 
-   images
+   images - uncompressed images
    
-   scripts
+   scripts - multiple preprocessed script files
    
-   styles
+   styles - multiple preprocessed css files
    
 bulid -
 
-   images
+   images - compressed images
    
-   scripts
+   scripts - a single minified script file
    
-   styles
+   styles - a silgle minified file
+
+
+# For Working With Gulp, We Must Install Locally.
+
+  npm install --save-dev gulp.
+
+# Plug-ins 
+
+ Gulp don't do much on it's own. we need to install and configure plug-ins to perform specific tasks, In gulp there is sepertae plugin for each tasks.
+ At this time, Gulp supports more then 2500 plugins, and this number will increase in future.
+
+# Install Your First Plugin
+  
+  npm install --save-dev gulp-jshint
+
+# Open Your Gulpfile And Paste The Follwing Code.
+
+  var gulp = require('gulp'); 
+
+  // include plug-ins
+  var jshint = require('gulp-jshint');
+
+  // JS hint task
+  gulp.task('jshint', function() {
+     gulp.src('./src/scripts/*.js')
+         .pipe(jshint())
+         .pipe(jshint.reporter('default'));
+});
+
+This Plugin will check the performance of your javascript file, and will log the errors on console.
+
+
 
