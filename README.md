@@ -82,9 +82,13 @@ bulid -
 
   // JS hint task
   gulp.task('jshint', function() {
+
      gulp.src('./src/scripts/*.js')
+
          .pipe(jshint())
+
          .pipe(jshint.reporter('default'));
+         
 });
 
 This Plugin will check the performance of your javascript file, and will log the errors on console.
